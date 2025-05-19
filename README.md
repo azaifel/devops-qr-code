@@ -51,3 +51,5 @@ Look at the capstone project for more detials.
 
 # just testing a trigger by scm
 # just testing a trigger by scm after configuring webhooks in github
+# previous job triggered but failed at deploy image for frontend as repo was private
+# I reset repo to public now
