@@ -1,0 +1,36 @@
+# Terraform generated files
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+crash.*.log
+*.tfplan
+.terraform.lock.hcl
+.terraformrc # This should ideally be outside the project, but good to include if it's accidentally placed here
+
+# AWS/Cloud Provider specific
+.aws/
+.terraform-registry-cache/ # If using a local registry cache
+
+# IDE and Editor specific files
+.idea/
+.vscode/
+*.iml
+*.iws
+*.ipr
+*.swp # Vim swap files
+*~    # Backup files
+.DS_Store # macOS specific
+Thumbs.db # Windows specific
+
+# Operating system specific files
+.terraform-cli.log # Terraform CLI logs
+
+# Local modules/downloads
+vendor/
+dependencies/
+modules/ # If you have locally downloaded modules that aren't part of the repo
+
+# Crash dumps and logs
+*.log
+*.log.*
