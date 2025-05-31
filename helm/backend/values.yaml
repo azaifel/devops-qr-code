@@ -1,0 +1,16 @@
+replicaCount: 2
+
+image:
+  repository: azaifel/qr-backend
+  tag: latest
+  pullPolicy: IfNotPresent
+
+service:
+  type: LoadBalancer
+  port: 80
+  targetPort: 8000
+
+serviceAccount:
+  name: backend
+
+resources: {}

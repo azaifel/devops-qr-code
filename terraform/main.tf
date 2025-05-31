@@ -14,11 +14,11 @@ module "vpc" {
   enable_nat_gateway   = false
 
   public_subnet_tags = {
-    "kubernetes.io/role/elb"                     = 1
+    "kubernetes.io/role/elb"                    = 1
     "kubernetes.io/cluster/qr-code-eks-cluster" = "shared"
   }
 
-  map_public_ip_on_launch = true  # ✅ this is the key line
+  map_public_ip_on_launch = true # ✅ this is the key line
 
   tags = {
     Terraform   = "true"
